@@ -34,55 +34,54 @@ Si GitHub no muestra el notebook, se puede ver aquí:
 2. Instalar las librerías: `pip install -r requirements.txt`
 3. Abrir y ejecutar `notebooks/01_exploratory_data_analysis.ipynb`.
 
-Project Organization
+Organización del proyecto
 ------------
 
-    ├── LICENSE
-    ├── Makefile           <- Makefile with commands like `make data` or `make train`
-    ├── README.md          <- The top-level README for developers using this project.
-    ├── data
-    │   ├── external       <- Data from third party sources.
-    │   ├── interim        <- Intermediate data that has been transformed.
-    │   ├── processed      <- The final, canonical data sets for modeling.
-    │   └── raw            <- The original, immutable data dump.
+Estructura basada en la plantilla cookiecutter de ciencia de datos.
+
+    ├── LICENSE            <- Licencia del proyecto.
+    ├── Makefile           <- Comandos útiles como `make data` o `make train`.
+    ├── README.md          <- Este archivo: descripción general del proyecto.
+    ├── data               <- Datos del proyecto (no se suben a GitHub).
+    │   ├── external       <- Datos de fuentes externas.
+    │   ├── interim        <- Datos intermedios ya transformados.
+    │   ├── processed      <- Datos finales, listos para el modelo.
+    │   └── raw            <- Datos originales de Kaggle, sin modificar.
     │
-    ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
+    ├── docs               <- Documentación del proyecto (Sphinx).
     │
-    ├── models             <- Trained and serialized models, model predictions, or model summaries
+    ├── models             <- Modelos entrenados y sus predicciones.
     │
-    ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-    │                         the creator's initials, and a short `-` delimited description, e.g.
-    │                         `1.0-jqp-initial-data-exploration`.
+    ├── notebooks          <- Notebooks de Jupyter. Aquí está el EDA:
+    │                         `01_exploratory_data_analysis.ipynb`.
     │
-    ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
+    ├── references         <- Material de referencia (enunciado del proyecto, diccionarios de datos).
     │
-    ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-    │   └── figures        <- Generated graphics and figures to be used in reporting
+    ├── reports            <- Reportes generados (HTML, PDF, etc.).
+    │   └── figures        <- Gráficas generadas para los reportes.
     │
-    ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-    │                         generated with `pip freeze > requirements.txt`
+    ├── requirements.txt   <- Librerías necesarias para ejecutar el proyecto.
     │
-    ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
-    ├── src                <- Source code for use in this project.
-    │   ├── __init__.py    <- Makes src a Python module
+    ├── setup.py           <- Permite instalar el proyecto con `pip install -e .`
+    ├── src                <- Código fuente del proyecto.
+    │   ├── __init__.py    <- Convierte `src` en un módulo de Python.
     │   │
-    │   ├── data           <- Scripts to download or generate data
-    │   │   └── make_dataset.py
+    │   ├── data           <- Scripts para descargar o generar los datos.
+    │   │   └── make_dataset.py
     │   │
-    │   ├── features       <- Scripts to turn raw data into features for modeling
-    │   │   └── build_features.py
+    │   ├── features       <- Scripts para crear variables para el modelo.
+    │   │   └── build_features.py
     │   │
-    │   ├── models         <- Scripts to train models and then use trained models to make
-    │   │   │                 predictions
-    │   │   ├── predict_model.py
-    │   │   └── train_model.py
+    │   ├── models         <- Scripts para entrenar modelos y hacer predicciones.
+    │   │   ├── predict_model.py
+    │   │   └── train_model.py
     │   │
-    │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
-    │       └── visualize.py
+    │   └── visualization  <- Scripts para crear gráficas.
+    │       └── visualize.py
     │
-    └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
+    └── tox.ini            <- Configuración para ejecutar pruebas con tox.
 
 
 --------
 
-<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
+<p><small>Proyecto basado en la plantilla <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science</a>.</small></p>
