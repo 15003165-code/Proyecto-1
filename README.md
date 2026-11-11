@@ -1,7 +1,38 @@
-Proyecto 1
+Proyecto 1 - EDA Predict Future Sales
 ==============================
 
-EDA del dataset Predict Future Sales de Kaggle
+Análisis exploratorio de datos (EDA) del dataset **Predict Future Sales** de Kaggle (ventas diarias de 1C Company,
+enero 2013 a octubre 2015).
+
+**Integrantes:** Brady Monroy (15003165) y Luis Rodolfo Rodriguez
+
+## 📓 Notebook del análisis
+
+### ➡️ [01_exploratory_data_analysis.ipynb](notebooks/01_exploratory_data_analysis.ipynb)
+
+Si GitHub no muestra el notebook, se puede ver aquí:
+[abrir en nbviewer](https://nbviewer.org/github/15003165-code/Proyecto-1/blob/main/notebooks/01_exploratory_data_analysis.ipynb)
+
+| Sección | Contenido |
+|---|---|
+| 1 | Carga de librerías y datos |
+| 2 | Comprensión inicial del dataset |
+| 3 | Validación de la estructura de los datos |
+| 4 | Valores faltantes y duplicados |
+| 5 | Análisis descriptivo general |
+| 6 | Exploración temporal |
+| 7 | Análisis comparativo entre sucursales y productos |
+| 8 | Visualizaciones clave |
+| 9 | Autocorrelación (ACF) y autocorrelación parcial (PACF) |
+| 10 | Insights y conclusiones del EDA |
+
+## Cómo ejecutarlo
+
+1. Descargar los archivos de
+   [Kaggle](https://www.kaggle.com/competitions/competitive-data-science-predict-future-sales/data) y colocarlos en
+   `data/raw/` (no se suben al repositorio).
+2. Instalar las librerías: `pip install -r requirements.txt`
+3. Abrir y ejecutar `notebooks/01_exploratory_data_analysis.ipynb`.
 
 Project Organization
 ------------
