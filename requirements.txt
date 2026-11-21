@@ -17,6 +17,13 @@ seaborn
 statsmodels
 jupyter
 
+# pipeline de machine learning (notebooks 02 a 05)
+scikit-learn
+feature-engine
+pyarrow
+pyyaml
+joblib
+
 
 # backwards compatibility
 pathlib2

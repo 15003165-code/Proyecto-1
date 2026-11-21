@@ -1,0 +1,30 @@
+# Configuración del pipeline (Proyecto 2 - Predict Future Sales)
+# Variables elegidas en notebooks/02_feature_exploration.ipynb
+
+TARGET: item_cnt_month
+
+# Meses para entrenar, validar y predecir (división en orden de tiempo)
+PRIMER_MES_TRAIN: 0
+ULTIMO_MES_TRAIN: 26
+PRIMER_MES_VALID: 27
+ULTIMO_MES_VALID: 33
+MES_TEST: 34
+
+MODEL_FEATURES:
+  - lag_1
+  - lag_2
+  - lag_3
+  - ciudad
+  - tienda_online
+  - venta_tienda_lag_1
+  - grupo_categoria
+  - venta_producto_lag_1
+  - meses_desde_primera_venta
+  - mes
+
+# Grupos de variables para el pipeline
+CATEGORICAS: [ciudad, grupo_categoria]
+IMPUTAR_MEDIANA: [venta_tienda_lag_1]
+OUTLIERS_P99: [venta_producto_lag_1]
+YEO_JOHNSON: [lag_1, lag_2, lag_3, venta_tienda_lag_1, venta_producto_lag_1]
+ESCALAR: [lag_1, lag_2, lag_3, venta_tienda_lag_1, venta_producto_lag_1, mes, meses_desde_primera_venta]
